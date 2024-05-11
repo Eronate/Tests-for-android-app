@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "performance": "node --allow-natives-syntax ./node_modules/mocha/bin/_mocha --reporter mocha-performance test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webdriverio": "^8.36.1"
+  },
+  "dependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.4.0",
+    "mocha-performance": "^0.1.1"
+  }
+}
