@@ -1,9 +1,5 @@
 import { remote } from 'webdriverio';
 import { expect, assert } from 'chai';
-import { exec } from 'child_process';
-import util from 'util';
-
-const execPromisified = util.promisify(exec);
 
 describe('My mobile app', function() {
   this.timeout(99999); 
@@ -189,7 +185,7 @@ describe('My mobile app', function() {
     });
 
     //From what we've tested this seems to fail, usually takes like ~5 seconds
-    it.only('Clicking on login should take you to the login page in less than 3 seconds', async function(){
+    it('Clicking on login should take you to the login page in less than 3 seconds', async function(){
       const start = Date.now()
 
         const navButton = await driver.$('android=new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/menuIV")')
