@@ -15,3 +15,9 @@ How to setup:
 - Run the tests with ```mocha test.js```
 
 Includes: UI tests, Functional tests, Performance tests for the sample app in /apk
+
+Video of running the tests:
+
+https://www.youtube.com/watch?v=c7nuX5uN61o
+
+ChatGPT/Copilot would have a hard time generating tests, as elements need to be inspected with Appium Inspector in order to build tests around them, and it has no way of knowing the right Selectors one would need to use in order to proceed. The app is tested in a black-box sense, using the APK only.
